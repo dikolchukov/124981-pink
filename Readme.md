@@ -1,6 +1,6 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
-* Студент: [Dmitry Ket4uP Kolchukov](https://up.htmlacademy.ru/adaptive/12/user/124981).
+* Студент: [Dmitry Kolchukov](https://up.htmlacademy.ru/adaptive/12/user/124981).
 * Наставник: [Александр Собакарь](https://htmlacademy.ru/profile/id128451).
 
 ---
