@@ -2,11 +2,43 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Пинк</title>
+    <title>HTML Academy: Пинк - Главная</title>
   </head>
   <body>
-
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">Продвинутый HTML и CSS</a>».</p>
-
+    <header class="main-header">
+      <button class="main-nav__toggle" type="button">Открыть меню</button>
+      <img class="main-header__logo-image" src="http://placehold.it/75x22" width="75" height="22" alt="Пинк">
+      <nav class="main-nav">
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a href="index.html">Главная</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="photo.html">Фотографии</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="form.html">Конкурс</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+          </li>
+        </ul>
+      </nav>
+      <a class="button button--download"></a>
+      <ul class="main-header__markets markets-list">
+        <li class="markets-list__item">
+          <a href="#" class="markets-list__link markets-list__link--apple"></a>
+        </li>
+        <li class="markets-list__item">
+          <a href="#" class="markets-list__link markets-list__link--android"></a>
+        </li>
+        <li class="markets-list__item">
+          <a href="#" class="markets-list__link markets-list__link--windows"></a>
+        </li>
+      </ul>
+      <p class="main-header__available">
+        Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
+      </p>
+    </header>
   </body>
 </html>
