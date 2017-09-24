@@ -6,7 +6,7 @@
   </head>
   <body>
     <header class="main-header">
-      <button class="main-nav__toggle" type="button">Открыть меню</button>
+      <button class="main-header__toggle" type="button">Открыть меню</button>
       <img class="main-header__logo-image" src="http://placehold.it/75x22" width="75" height="22" alt="Пинк">
       <nav class="main-nav">
         <ul class="main-nav__list">
@@ -24,32 +24,32 @@
           </li>
         </ul>
       </nav>
-      <a class="button button--download"></a>
+      <a class="button button--download">Скачать приложение</a>
       <ul class="main-header__markets markets-list">
         <li class="markets-list__item">
-          <a href="#" class="markets-list__link markets-list__link--apple"></a>
+          <a href="#" class="markets-list__link markets-list__link--apple">AppStore</a>
         </li>
         <li class="markets-list__item">
-          <a href="#" class="markets-list__link markets-list__link--android"></a>
+          <a href="#" class="markets-list__link markets-list__link--android">Play Market</a>
         </li>
         <li class="markets-list__item">
-          <a href="#" class="markets-list__link markets-list__link--windows"></a>
+          <a href="#" class="markets-list__link markets-list__link--windows">Windows Store</a>
         </li>
       </ul>
       <p class="main-header__available">
         Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
       </p>
+      <img class="main-header__application-image" src="http://placehold.it/320x314" alt="Приложение Пинк" width="320" height="314">
     </header>
     <main class="page-main">
-      <h1 class="visually-hiden">
-        Приложение "Пинк"
-      </h1>
-      <p class="page-main__question">
-        Устали от серости мегаполиса?
-      </p>
-      <p class="page-main__answer">
-        Нам есть, что вам предложить?
-      </p>
+      <header class="page-main__title">
+        <p class="page-main__sentence">
+          Устали от серости мегаполиса?
+        </p>
+        <p class="page-main__sentence">
+          Нам есть, что вам предложить!
+        </p>
+      </header>
       <section class="features">
         <h2 class="visually-hidden">
           Особенности приложения
@@ -85,11 +85,11 @@
         <h2 class="visually-hidden">
           Отзывы
         </h2>
-        <ul class="reviews__list slider-reviews__list">
-          <li class="reviews__item slider-reviews__item">
-            <h3 class="reviews__title">
+        <div class="reviews__list slider-reviews__list">
+          <blockquote class="reviews__item slider-reviews__item">
+            <cite class="reviews__author-name">
               Николай Петров
-            </h3>
+            </cite>
             <p class="reviews__text">
               «Это приложение перевернуло мой мир
               и по-новому взглянуть на
@@ -97,8 +97,8 @@
               познакомился со своей будущей женой
               в к выложенной фотографии!»
             </p>
-          </li>
-        </ul>
+          </blockquote>
+        </div>
         <div class="slider-reviews__toggles">
           <button class="slider-reviews__toggle" type="button">
             1
