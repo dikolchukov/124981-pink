@@ -7,3 +7,26 @@
   line-height: 30px;
   font-weight: 400;
 }
+.page-main__title {
+  margin-top: 44px;
+}
+
+.page-main__sentence {
+  width: 250px;
+  margin: 0 auto;
+  padding: 0;
+  font-size: 24px;
+  line-height: 30px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+@media (min-width: @tablet-width) {
+  .page-main__sentence {
+    width: 600px;
+    &:last-child {
+      width: 340px;
+    }
+    margin-bottom: 0;
+  }
+}
