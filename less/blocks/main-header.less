@@ -1,14 +1,73 @@
 .main-header {
-  background: #1d2631 url(../img/bg-back-mobile@1x.jpg) no-repeat center;
+  background: #1d2631 url(../img/bg-back-mobile@1x.jpg) no-repeat center top;
 
   font-family: "Open Sans", Arial, sans-serif;
   color: #ffffff;
   font-size: 24px;
   line-height: 24px;
   font-weight: 300;
-  &__title {
-    font-size: 24px;
-    line-height: 24px;
-    font-weight: 300;
+}
+
+.main-header__top-wrapper {
+  background-color: rgba(0,0,0,0.3);
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 66px;
+}
+
+.main-header__toggle {
+  order: 2;
+  font-size: 0;
+  width: 50px;
+  height: 24px;
+  border: none;
+  background: url(../../img/icon-menu-burger.svg) no-repeat center;
+}
+
+.main-header__main-wrapper {
+  display: block;
+}
+
+.main-header__application-wrap {
+  max-width: 280px;
+  margin: 0 auto;
+}
+
+.main-header__tagline {
+  display: none;
+}
+
+.main-header__application-image {
+  margin-top: 110px;
+  margin-left: 0;
+}
+
+.main-header__available {
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+}
+
+.main-header__title {
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 300;
+}
+
+@media (min-width: @tablet-width) {
+  .main-header__main-wrapper {
+    display: flex;
   }
+
+  .main-header__application-image {
+    order: 2;
+  }
+
+  .main-header__application-wrap {
+    width: 300px;
+    margin-left: 20px;
+  }
+
 }

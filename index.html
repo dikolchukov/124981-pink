@@ -8,40 +8,43 @@
   </head>
   <body>
     <header class="main-header">
-      <button class="main-header__toggle" type="button">Открыть меню</button>
-      <img class="main-header__logo-image" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Пинк">
-      <nav class="main-nav">
-        <ul class="main-nav__list">
-          <li class="main-nav__item">
-            <a href="index.html">Главная</a>
-          </li>
-          <li class="main-nav__item">
-            <a href="photo.html">Фотографии</a>
-          </li>
-          <li class="main-nav__item">
-            <a href="form.html">Конкурс</a>
-          </li>
-          <li class="main-nav__item">
-            <a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-          </li>
-        </ul>
-      </nav>
-      <a class="button button--download">Скачать приложение</a>
-      <ul class="main-header__markets markets-list">
-        <li class="markets-list__item">
-          <a href="#" class="markets-list__link markets-list__link--apple">AppStore</a>
-        </li>
-        <li class="markets-list__item">
-          <a href="#" class="markets-list__link markets-list__link--android">Play Market</a>
-        </li>
-        <li class="markets-list__item">
-          <a href="#" class="markets-list__link markets-list__link--windows">Windows Store</a>
-        </li>
-      </ul>
-      <p class="main-header__available">
-        Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
-      </p>
-      <img class="main-header__application-image" src="img/iphone-hand-mobile@1x.png" alt="Приложение Пинк" width="258" height="286">
+      <div class="main-header__wrapper">
+        <div class="main-header__top-wrapper container">
+          <button class="main-header__toggle" type="button">Открыть меню</button>
+          <img class="main-header__logo-image" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Пинк">
+        </div>
+        <nav class="main-nav">
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <a href="index.html">Главная</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="photo.html">Фотографии</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="form.html">Конкурс</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="main-header__main-wrapper">
+        <img class="main-header__application-image" src="img/iphone-hand-mobile@1x.png" alt="Приложение Пинк" width="258" height="286">
+        <div class="main-header__application-wrap">
+          <h1 class="main-header__tagline">Взгляните на жизнь иначе!</h1>
+          <a class="button button--download">Скачать приложение</a>
+          <div class="main-header__markets markets-list">
+            <a href="#" class="markets-list__link markets-list__link--apple">AppStore</a>
+            <a href="#" class="markets-list__link markets-list__link--android">Play Market</a>
+            <a href="#" class="markets-list__link markets-list__link--windows">Windows Store</a>
+          </div>
+          <p class="main-header__available">
+            Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
+          </p>
+        </div>
+      </div>
     </header>
     <main class="page-main">
       <header class="page-main__title">
