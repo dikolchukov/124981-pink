@@ -6,3 +6,16 @@
   font-weight: 400;
   color: #283645;
 }
+
+.main-footer--index {
+  display: none;
+  .container();
+}
+
+@media (min-width: @tablet-width) {
+  .main-footer--index {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}

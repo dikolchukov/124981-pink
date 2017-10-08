@@ -1,7 +1,29 @@
 .prices {
+  padding-top: 1px;
+  width: 100%;
+  overflow: hidden;
   background-color: #f2f2f2;
   font-size: inherit;
   line-height: inherit;
   font-weight: inherit;
   text-transform: uppercase;
+}
+
+.prices__toggles {
+  width: 62px;
+  margin: 0 auto;
+  margin-top: 40px;
+  margin-bottom: 47px;
+}
+
+@media (min-width: @tablet-width) {
+  .prices__toggles {
+    display: none;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .prices__table-wrapper {
+    .container-desktop();
+  }
 }

@@ -85,3 +85,28 @@
     display: block;
   }
 }
+
+@media (min-width: @desktop-width) {
+  .main-header__big-wrapper {
+    background-color: rgba(0,0,0,0.3);
+  }
+
+  .main-header__wrapper {
+    .container-desktop();
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .main-header__top-wrapper {
+    background-color: transparent;
+    padding: 0;
+  }
+
+  .main-header__toggle {
+    display: none;
+  }
+
+  .main-header__main-wrapper {
+    .container-desktop();
+  }
+}
