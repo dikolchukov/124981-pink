@@ -2,32 +2,37 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
     <title>HTML Academy: Пинк - Конкурс</title>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&amp;subset=cyrillic" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="main-header">
-      <button class="main-header__toggle" type="button">Открыть меню</button>
-      <a href="index.html" class="main-header__logo">
-        <img class="main-header__logo-image" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Пинк">
-      </a>
-      <nav class="main-nav">
-        <ul class="main-nav__list">
-          <li class="main-nav__item">
-            <a href="index.html">Главная</a>
-          </li>
-          <li class="main-nav__item">
-            <a href="photo.html">Фотографии</a>
-          </li>
-          <li class="main-nav__item">
-            <a href="form.html">Конкурс</a>
-          </li>
-          <li class="main-nav__item">
-            <a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-          </li>
-        </ul>
-      </nav>
+      <div class="main-header__big-wrapper">
+        <div class="main-header__wrapper">
+          <div class="main-header__top-wrapper">
+            <button class="main-header__toggle" type="button">Открыть меню</button>
+            <img class="main-header__logo-image" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Пинк">
+          </div>
+          <nav class="main-nav">
+            <ul class="main-nav__list">
+              <li class="main-nav__item">
+                <a href="index.html">Главная</a>
+              </li>
+              <li class="main-nav__item">
+                <a href="photo.html">Фотографии</a>
+              </li>
+              <li class="main-nav__item">
+                <a href="form.html">Конкурс</a>
+              </li>
+              <li class="main-nav__item">
+                <a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
       <h1 class="main-header__title">
         Конкурс на самое безбашенное путешествие с Пинк
       </h1>
@@ -119,9 +124,7 @@
           <h2 class="form__title">
             Опишите свои эмоции
           </h2>
-          <textarea class="form__textarea" rows="7" cols="24">
-            Можно прям в красках, не стесняясь в выражениях
-          </textarea>
+          <textarea class="form__textarea" rows="7" cols="24">Можно прям в красках, не стесняясь в выражениях</textarea>
         </section>
         <button class="green-button" type="submit">
           Отправить форму
