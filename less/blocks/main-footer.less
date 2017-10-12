@@ -1,5 +1,6 @@
 .main-footer {
-  padding-bottom: 42px;
+  .container();
+  padding-bottom: 40px;
   background-color: #ffffff;
   font-family: "Open Sans", Arial, sans-serif;
   font-size: 14px;
@@ -42,9 +43,16 @@
 }
 
 @media (min-width: @tablet-width) {
-  .main-footer--index {
+  .main-footer--index,
+  .main-footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
+  }
+
+  .main-footer__logo,
+  .main-footer__creators,
+  .main-footer__academy {
+    margin: 0;
   }
 }
