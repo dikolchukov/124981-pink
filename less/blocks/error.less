@@ -1,8 +1,55 @@
 .error {
+  display: none;
+  width: 100%;
+  .container();
+  padding-top: 44px;
+  padding-bottom: 50px;
   background-color: #ffffff;
   font-family: "Open Sans", Arial, sans-serif;
   font-size: 14px;
   line-height: 24px;
   font-weight: 400;
   color: #283645;
+  box-shadow: 0 7px 15px 0 rgba(0,1,1,0.15);
+  position: fixed;
+  top: 45px;
+}
+
+.error__title {
+  margin: 0;
+  margin-bottom: 33px;
+  padding: 0;
+  text-align: center;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+}
+
+.error__text {
+  width: 280px;
+  margin: 0 auto;
+  margin-bottom: 42px;
+  padding: 0;
+  text-align: center;
+}
+
+@media (min-width: @tablet-width) {
+  .error {
+    width: 460px;
+    left: 50%;
+    margin-left: -230px;
+  }
+
+  .error__title {
+    width: 220px;
+    margin: 0 auto;
+    margin-bottom: 28px;
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  .error__text {
+    width: 300px;
+    font-size: 18px;
+  }
 }

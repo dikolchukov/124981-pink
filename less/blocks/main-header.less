@@ -1,14 +1,128 @@
 .main-header {
-  background: #1d2631 url(../img/bg-back-mobile@1x.jpg) no-repeat center;
+  background: #1d2631 url(../img/bg-back-mobile@1x.jpg) no-repeat top center;
 
   font-family: "Open Sans", Arial, sans-serif;
   color: #ffffff;
   font-size: 24px;
   line-height: 24px;
   font-weight: 300;
-  &__title {
-    font-size: 24px;
-    line-height: 24px;
-    font-weight: 300;
+  padding-bottom: 1px;
+}
+
+.main-header__top-wrapper {
+  background-color: rgba(0,0,0,0.3);
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 66px;
+  .container();
+}
+
+.main-header__toggle {
+  order: 2;
+  font-size: 0;
+  width: 50px;
+  height: 24px;
+  border: none;
+  background: url(../../img/icon-menu-burger.svg) no-repeat center;
+}
+
+.main-header__main-wrapper {
+  display: block;
+  .container();
+}
+
+.main-header__tagline {
+  display: none;
+  font-size: 40px;
+  line-height: 40px;
+  font-weight: 300;
+  width: 218px;
+  text-align: center;
+  padding: 0;
+  margin: 0 auto;
+}
+
+.main-header__application-image {
+  margin-top: 110px;
+  margin-left: -20px;
+}
+
+.main-header__available {
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+  margin: 0 auto;
+  padding: 0;
+  width: 280px;
+  text-align: center;
+}
+
+.main-header__title {
+  width: 280px;
+  margin: 0 auto;
+  margin-top:33px;
+  margin-bottom: 53px;
+  padding: 0;
+  text-align: center;
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 300;
+}
+
+@media (min-width: @tablet-width) {
+  .main-header__main-wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .main-header__application-image {
+    order: 2;
+  }
+
+  .main-header__application-wrap {
+    width: 300px;
+    margin: 0;
+    margin-top: 100px;
+    z-index: 2;
+  }
+
+  .main-header__tagline {
+    display: block;
+  }
+
+  .main-header__title {
+    width: 620px;
+    margin: 0 auto;
+    margin-top: 75px;
+    margin-bottom: 78px;
+    font-size: 50px;
+    line-height: 50px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-header__big-wrapper {
+    background-color: rgba(0,0,0,0.3);
+  }
+
+  .main-header__wrapper {
+    .container-desktop();
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .main-header__top-wrapper {
+    background-color: transparent;
+    padding: 0;
+  }
+
+  .main-header__toggle {
+    display: none;
+  }
+
+  .main-header__main-wrapper {
+    .container-desktop();
   }
 }
