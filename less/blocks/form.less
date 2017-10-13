@@ -3,7 +3,7 @@
   line-height: 30px;
   font-weight: inherit;
   color: #283645;
-  margin-bottom: 62px;
+  padding-bottom: 62px;
   &__achievments,
   &__applications {
     background-color: #f2f2f2;
@@ -165,7 +165,9 @@
     display: flex;
     flex-direction: column;
     .container();
-    margin-bottom: 85px;
+    // margin-bottom: 85px;
+    padding-bottom: 85px;
+    margin-bottom: 0;
   }
 
   .form__user-info,
@@ -289,5 +291,85 @@
   .form__note {
     margin: 0;
     width: 180px;
+  }
+}
+
+@media(min-width: @desktop-width) {
+  .form {
+    .container-desktop();
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-bottom: 65px;
+  }
+
+  .form__user-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .form__user-info,
+  .form__applications {
+    width: 435px;
+  }
+
+  .form__applications .form__title {
+    width: 368px;
+    margin-left: -20px;
+  }
+
+  .form .form__contacts {
+    padding-bottom: 20px;
+  }
+
+  .form__contacts-wrap {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .form__contacts .form__item {
+    width: 375px;
+    margin-bottom: 0;
+  }
+
+  .form__achievments-wrap {
+    display: flex;
+    // justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .form__achievments .form__item {
+    &:nth-of-type(1) {
+      order: 1;
+      margin-right: 34px;
+    }
+
+    &:nth-of-type(2) {
+      order: 4;
+      margin-right: 72px;
+    }
+
+    &:nth-of-type(3) {
+      order: 2;
+      margin-right: 30px;
+    }
+
+    &:nth-of-type(4) {
+      order: 5;
+      margin-right: 39px;
+    }
+
+    &:nth-of-type(5) {
+      order: 3;
+    }
+
+    &:nth-of-type(6) {
+      order: 6;
+    }
+  }
+
+  .form__textarea {
+    height: 128px;
   }
 }
