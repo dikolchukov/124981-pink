@@ -1,6 +1,6 @@
 .button {
   font-family: "Open Sans", Arial, sans-serif;
-  background-color: none;
+  background-color: transparent;
   border: 3px solid #ffffff;
   border-radius: 30px;
   font-size: 18px;
@@ -19,8 +19,41 @@
   width: 280px;
 }
 
-@media(min-width: @tablet-width) {
+.button--post-it {
+  width: 100%;
+  margin-bottom: 12px;
+  border-color: #d22856;
+  color: #d22856;
+}
+
+.button--cancel {
+  width: 100%;
+  border-color: #dddfe0;
+  color: rgba(40,54,69,0.1);
+}
+
+@media (min-width: @tablet-width) {
   .button--download{
-    width: 300px;  
+    width: 300px;
+  }
+
+  .button--post-it {
+    margin-bottom: 24px;
+  }
+
+  .button--post-it,
+  .button--cancel {
+    width: 260px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .button--post-it {
+    margin: 0;
+  }
+
+  .button--post-it,
+  .button--cancel {
+    width: 183px;
   }
 }
