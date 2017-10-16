@@ -1,7 +1,149 @@
 .gallery-item {
-  background-color: #f2f2f2;
+  background-color: #ffffff;
 
   font-size: 14px;
   line-height: 24px;
   font-weight: inherit;
+}
+
+.gallery-item {
+  width: 280px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+}
+
+.gallery-item--panorama {
+  position: relative;
+  width: 100%;
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.gallery-item__image {
+  display: block;
+}
+
+.gallery-item__image--panorama {
+  width: 100%;
+  height: auto;
+}
+
+.gallery-item__wrap {
+  background-color: #f2f2f2;
+  padding: 24px 18px 26px;
+}
+
+.gallery-item__wrap--panorama {
+  margin: 0 20px;
+  background-color: #f2f2f2;
+}
+
+.gallery-item__user-name {
+  line-height: 14px;
+  font-weight: 700;
+}
+
+.gallery-item__time {
+  font-size: 12px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+.gallery-item__text {
+  min-height: 48px;
+  margin: 0;
+  margin-top: 8px;
+  margin-bottom: 20px;
+  padding: 0;
+}
+
+.gallery-item__likes {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  padding-left: 33px;
+  font-size: 12px;
+  color: #d22856;
+  text-transform: uppercase;
+}
+
+.gallery-item__likes::before {
+  content: "";
+  position: absolute;
+  top: 6px;
+  left: 0;
+  width: 13px;
+  height: 12px;
+  background: url(../../img/icon-heart.svg) no-repeat center;
+}
+
+@media (min-width: @tablet-width) {
+  .gallery-item--panorama {
+    margin-bottom: 50px;
+  }
+
+  .gallery-item__wrap {
+    padding: 30px;
+  }
+
+  .gallery-item__wrap--panorama {
+    position: relative;
+  }
+
+  .gallery-item__wrap--panorama .gallery-item__likes {
+    position: absolute;
+    width: 118px;
+    padding: 0;
+    top: 30px;
+    right: 30px;
+
+    &::before {
+      left: auto;
+      right: 0;
+    }
+  }
+
+  .gallery-item__list {
+    .container();
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .gallery-item__list .gallery-item {
+    margin: 0;
+    margin-bottom: 20px;
+    width: 300px;
+  }
+
+  .gallery-item__list .gallery-item:nth-last-child(2) {
+    margin-bottom: 0;
+  }
+
+  .gallery-item__list .gallery-item__likes {
+    padding: 0;
+
+    &::before {
+      left: auto;
+      right: 0;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .gallery-item__wrap--panorama {
+    width: 940px;
+    margin: 0 auto;
+  }
+
+  .gallery-item__list {
+    .container-desktop();
+  }
+
+  .gallery-item__list .gallery-item:nth-last-child(3) {
+    margin-bottom: 0;
+  }
 }
