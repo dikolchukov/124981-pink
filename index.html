@@ -13,7 +13,11 @@
         <div class="main-header__wrapper">
           <div class="main-header__top-wrapper">
             <button class="main-header__toggle" type="button">Открыть меню</button>
-            <img class="main-header__logo-image" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Пинк">
+            <picture>
+              <source media="(min-width: 960px)" srcset="img/logo-pink-white-desktop.svg">
+              <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
+              <img class="main-header__logo-image" src="img/logo-pink-white-mobile.svg" alt="Пинк">
+            </picture>
           </div>
           <nav class="main-nav">
             <ul class="main-nav__list">
@@ -34,7 +38,10 @@
         </div>
       </div>
       <div class="main-header__main-wrapper">
-        <img class="main-header__application-image" src="img/iphone-hand-mobile@1x.png" alt="Приложение Пинк" width="258" height="286">
+        <picture class="main-header__application-image">
+          <source media="(min-width: 660px)" srcset="img/iphone-hand-tablet@1x.png" height="544">
+          <img src="img/iphone-hand-mobile@1x.png" srcset="img/iphone-hand-mobile@2x.png 2x" alt="Приложение Пинк">
+        </picture>
         <div class="main-header__application-wrap">
           <h1 class="main-header__tagline">Взгляните на жизнь иначе!</h1>
           <a class="button button--download">Скачать приложение</a>
