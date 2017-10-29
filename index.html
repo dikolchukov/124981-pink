@@ -39,7 +39,8 @@
       </div>
       <div class="main-header__main-wrapper">
         <picture class="main-header__application-image">
-          <source media="(min-width: 660px)" srcset="img/iphone-hand-tablet@1x.png" height="544">
+          <source media="(min-width: 960px)" srcset="img/iphone-hand-desktop@1x.png 1x, img/iphone-hand-desktop@2x.png 2x" height="644">
+          <source media="(min-width: 660px)" srcset="img/iphone-hand-tablet@1x.png 1x, img/iphone-hand-tablet@2x.png 2x" height="544">
           <img src="img/iphone-hand-mobile@1x.png" srcset="img/iphone-hand-mobile@2x.png 2x" alt="Приложение Пинк">
         </picture>
         <div class="main-header__application-wrap">
@@ -65,7 +66,7 @@
           Нам есть, что вам предложить!
         </p>
       </header>
-      <section class="features">
+      <section class="page-main__features features">
         <h2 class="visually-hidden">
           Особенности приложения
         </h2>
@@ -97,9 +98,10 @@
             </li>
           </ul>
           <div class="features__images">
-            <img class="features__image" src="http://via.placeholder.com/157x320" alt="Серый экран">
-            <img class="features__image" src="http://via.placeholder.com/157x320" alt="розовый экран">
+            <img class="features__image" src="img/iphone-screen-1-desktop@1x.png" scrset="img/iphone-screen-1-desktop@2x.png 2x" alt="Серый экран">
+            <img class="features__image" src="img/iphone-screen-2-desktop@1x.png" scrset="img/iphone-screen-2-desktop@2x.png 2x" alt="Розовый экран">
             <picture class="features__image">
+              <source media="(min-width: 960px)" srcset="img/iphone-screen-3-desktop@1x.png 1x, img/iphone-screen-3-desktop@2x.png 2x">
               <source media="(min-width: 660px)" srcset="img/iphone-screen-3-tablet@1x.png 1x, img\iphone-screen-3-tablet@2x.png 2x">
               <img src="img/iphone-screen-mobile@1x.png" srcset="img/iphone-screen-mobile@2x.png 2x" alt="Всем привет!">
             </picture>
@@ -107,7 +109,9 @@
         </div>
       </section>
       <section class="research">
-        <div class="research__decorate-image"></div>
+        <div class="research__timer">
+          <div class="research__hours">24</div>
+        </div>
         <div class="research__wrap">
           <h2 class="research__title">
             Эффект на 24 часа!
@@ -153,6 +157,8 @@
             3
           </button>
         </div>
+        <button class="slider-reviews__arrow slider-reviews__arrow--previous">Предыдущий отзыв</button>
+        <button class="slider-reviews__arrow slider-reviews__arrow--next">Следующий отзыв</button>
       </section>
       <section class="prices">
         <h2 class="visually-hidden">
@@ -181,7 +187,7 @@
               <header class="prices-slider__title">
                 <span class="prices-slider__name">Стандарт</span>
                 <span class="prices-slider__cost">3,99 USD</span>
-                <div class="flag flag-hit">
+                <div class="flag flag--hit">
                   <span>Хит<span>
                 </div>
               </header>
@@ -227,43 +233,44 @@
             3
           </button>
         </div>
-        <div class="prices__table-wrapper">
-          <table class="prices__table table">
-            <tr class="table__header-row">
-              <th class="table__header-data table__header-data--invisible"></th>
-              <th class="table__header-data">
-                <span class="table__name">База</span>
-                <span class="table__cost">1,99 USD</span>
-              </th>
-              <th class="table__header-data">
-                <span class="table__name">Стандарт</span>
-                <span class="table__cost">3,99 USD</span>
-              </th>
-              <th class="table__header-data">
-                <span class="table__name">Анлим</span>
-                <span class="table__cost">9,99 USD</span>
-              </th>
-            </tr>
-            <tr class="table__row">
-              <td class="table__data">Розовый фильтр</td>
-              <td class="table__data table__data--include">Розовый фильтр</td>
-              <td class="table__data table__data--include">Розовый фильтр</td>
-              <td class="table__data table__data--include">Розовый фильтр</td>
-            </tr>
-            <tr class="table__row">
-              <td class="table__data">Смайлики</td>
-              <td class="table__data table__data--not-include">Смайлики</td>
-              <td class="table__data table__data--include">Смайлики</td>
-              <td class="table__data table__data--include">Смайлики</td>
-            </tr>
-            <tr class="table__row">
-              <td class="table__data">Комментарии</td>
-              <td class="table__data table__data--not-include">Комментарии</td>
-              <td class="table__data table__data--not-include">Комментарии</td>
-              <td class="table__data table__data--include">Комментарии</td>
-            </tr>
-          </table>
-        </div>
+        <table class="prices__table table">
+          <tr class="table__header-row">
+            <th class="table__header-data table__header-data--invisible"></th>
+            <th class="table__header-data">
+              <span class="table__name">База</span>
+              <span class="table__cost">1,99 USD</span>
+            </th>
+            <th class="table__header-data">
+              <span class="table__name">Стандарт</span>
+              <span class="table__cost">3,99 USD</span>
+              <div class="flag flag--hit ">
+                <span>Хит<span>
+              </div>
+            </th>
+            <th class="table__header-data">
+              <span class="table__name">Анлим</span>
+              <span class="table__cost">9,99 USD</span>
+            </th>
+          </tr>
+          <tr class="table__row">
+            <td class="table__data">Розовый фильтр</td>
+            <td class="table__data table__data--include">Розовый фильтр</td>
+            <td class="table__data table__data--include">Розовый фильтр</td>
+            <td class="table__data table__data--include">Розовый фильтр</td>
+          </tr>
+          <tr class="table__row">
+            <td class="table__data">Смайлики</td>
+            <td class="table__data table__data--not-include">Смайлики</td>
+            <td class="table__data table__data--include">Смайлики</td>
+            <td class="table__data table__data--include">Смайлики</td>
+          </tr>
+          <tr class="table__row">
+            <td class="table__data">Комментарии</td>
+            <td class="table__data table__data--not-include">Комментарии</td>
+            <td class="table__data table__data--not-include">Комментарии</td>
+            <td class="table__data table__data--include">Комментарии</td>
+          </tr>
+        </table>
       </section>
       <section class="contacts">
         <h2 class="contacts__title">
@@ -297,9 +304,11 @@
           </div>
         </div>
       </section>
-      <div class="page-main__map">
-        <img class="page-main__map-image" src="img/bg-map-mobile@1x.png" width="320" height="421" alt="Карта">
-      </div>
+      <picture class="page-main__map">
+        <source media="(min-width: 960px)" srcset="img/bg-map-desktop@1x.jpg 1x, img/bg-map-desktop@2x.jpg 2x">
+        <source media="(min-width: 660px)" srcset="img/bg-map-tablet@1x.jpg 1x, img/bg-map-tablet@2x.jpg 2x">
+        <img class="page-main__map-image" src="img/bg-map-mobile@1x.png" srcset="img/bg-map-mobile@2x.jpg 2x" alt="Карта">
+      </picture>
     </main>
     <footer class="main-footer main-footer--index">
       <a href="index.html" class="main-footer__logo">
